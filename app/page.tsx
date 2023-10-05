@@ -8,7 +8,7 @@ export default async function Home() {
     where: {
       date: {
         // today minus 1 day
-        gte: new Date(new Date().setDate(new Date().getDate() - 1)),
+        gte: new Date(new Date().setDate(new Date().getDate() - 2)),
       },
     },
   });
