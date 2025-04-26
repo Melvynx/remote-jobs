@@ -3,6 +3,8 @@ import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/ca
 import { prisma } from '@/lib/prisma';
 import Link from 'next/link';
 
+export const dynamic = 'force-dynamic';
+
 export default async function Home() {
   const jobs = await prisma.jobs.findMany({
     where: {
